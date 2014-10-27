@@ -1,0 +1,8 @@
+approot/bin
+
+approot/obj
+*.suo
+
+
+
+approot/*.csproj.user

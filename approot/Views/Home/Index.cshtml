@@ -1,0 +1,15 @@
+﻿@model HowToUseAzureBlobStrage.Models.CloudFileModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<ul>
+@foreach (var file in Model.Files) {
+    <li>
+        <a href="@file.URL">@file.FileName</a>( @file.Size bytes )
+    </li>
+}
+</ul>
+@Html.ActionLink("Upload Another File", "UploadFile")
